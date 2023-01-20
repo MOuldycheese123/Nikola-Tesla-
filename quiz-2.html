@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tesl Quiz</title>
+  <body style="background-color:peachpuff">
+    Q1. Where was Tesla born?<br>
+    <input type="radio" name="Question1">Serbia <br>
+    <input type="radio" name="Question1" id="correct1">croatia<br>
+    <input type="radio" name="Question1">ALbania<br>
+    <input type="radio" name="Question2">Germany<br>
+
+    Q2. Which disorder did Tesla have ?<br>
+    <input type="radio" name="Question2"> A.D.H.D<br>
+    <input type="radio" name="Question2"> P.T.S.D<br>
+    <input type="radio" name="Question2">N.P.D<br>
+    <input type="radio" name="Question2" id="correct2">O.C.D<br>
+
+    Q3. Where did did Tesla die?<br>
+    <input type="radio" name="Question3">Croatia<br>
+    <input type="radio" name="Question3">Serbia <br>
+    <input type="radio" name="Question3"id="correct3">America<br>
+    <input type="radio" name="Question3">Germany<br>
+    
+    Q4. Which invention is tesla known for?<br>
+    <input type="radio" name="Question4">Radium<br>
+    <input type="radio" name="Question4" id="correct4"> Alternating Current<br>
+    <input type="radio" name="Question4">Gravity<br>
+    <input type="radio" name="Question4">Motorbikes<br>
+    
+    Q5. Which another invention is tesla credited for <br>
+    <input type="radio" name="Question5" id="correct5">short distance radio communication<br>
+    <input type="radio" name="Question5">long didstance travelling motor vehicle <br>
+    <input type="radio" name="Question5"> zippers<br>
+    <input type="radio" name="Question5"> atomic bomb<br>
+    
+    Q6. Who was tesla's buissness rival <br>
+    <input type="radio" name="Question">Sigmund Freud <br>
+    <input type="radio" name="Question6" id="correct6">Edison<br>
+    <input type="radio" name="Question6">Eintein<br>
+    <input type="radio" name="Question6">Mark Twain<br>
+    
+    Q7. Whom did tesla work for at an early age <br>
+    <input type="radio" name="Question7">Einstein<br>
+    <input type="radio" name="Question7" id="correct7">Edison<br>
+    <input type="radio" name="Question7">Thunberg<br>
+    <input type="radio" name="Question7">Jerry<br>
+    
+    Q8. Which natural disaster was Tesla born during?<br>
+    <input type="radio" name="Question8" id="correct8">thunder strom <br>
+    <input type="radio" name="Question8">tsunami<br>
+    <input type="radio" name="Question8">earthquake <br>
+    <input type="radio" name="Question8">volcanic eruption<br>
+    <input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+      <script type="text/javascript">
+        function result() {
+  //body...
+          var score=0;
+         if (document.getElementById('correct1').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct2').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct3').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct4').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct5').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct6').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct7').checked)
+         {
+           score++;
+         }
+          if (document.getElementById('correct8').checked)
+         {
+           score++;
+          }
+          document.write("your score is"+score);
+          
+        }
+      </script>
+    
+  </body>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
